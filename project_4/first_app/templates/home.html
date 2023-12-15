@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>This is home page</h1>
+    
+    <h2> Name : {{name}} </h2>
+    <h2> Age : {{age}} </h2>
+    <h2> {{lst}} </h2>
+
+    {% if age == 20 %}
+      <h4>You are adult</h4>
+    {% else %}
+      <h4>You are a child</h4>
+    {% endif %}
+
+    {% for i in lst%}
+        <h3> {{i}} </h3>
+    {% endfor %}
+
+   </body>
+</html>
